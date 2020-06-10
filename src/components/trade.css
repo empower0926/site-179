@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+.trade{
+    background-image:url('https://storage.googleapis.com/theeducure/React/BG.png');
+    background-size: cover;
+    width:auto;
+    height:auto;
+}
+
+.trade .heading{
+    font-size:60px;
+    text-align:center;
+    color:#9013FE;
+    font-family: 'Heebo', sans-serif;
+}
+
+.trade .images{
+    height:400px;
+    width: 400px;
+}
+.trade .texts{
+    margin-top:50px;
+}
+.trade .letsbutton{
+    width:210px;
+    height:45px;
+    float:left;
+    cursor: pointer;
+}
+.trade .texts h3{
+    text-align:left;
+    font-size:35px;
+    margin-bottom:30px;
+    font-family:'Heebo', sans-serif;
+}
+.trade .texts p{
+    font-size:12px;
+    text-align:left;
+}
+.trade .tradingnow{
+cursor:pointer;
+}
+.trade .tradingnow img{
+  width:210px;
+  height:45px;
+  margin-top:80px;
+}
+#left{
+float:right;}
+#right{float:left;}
+@media(max-width:768px){
+    #left{
+        float:none;
+    }
+    #right{
+        float:none;
+    }
+}
+@media(max-width:450px){
+    .trade .texts{
+        padding:0 20px;
+    }
+    .trade .texts h3{
+        margin-bottom: 20px;
+    }
+    .trade .lets_button{
+        text-align:center;
+        display: block;
+    }
+    .trade .lets_button .letsbutton{
+        float:none;
+    }
+    .trade .images{
+        width:250px;
+        height:250px;
+    }
+    .trade .heading{
+        font-size:40px; 
+    }
+    .trade .tradingnow img{
+        margin-top: 40px;
+    }
+    #left, #right{
+    float:none;  
+    }
+
+}

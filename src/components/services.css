@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+.form{
+    background-image:url('https://storage.googleapis.com/theeducure/React/BG-1.png');
+    background-size: cover;
+    width:auto;
+    height:auto;
+}
+.form .form-body{
+    margin:60px 0px;
+    border-radius: 8px;
+    background-color: white;
+    padding:30px 60px 30px 60px;
+}
+.form .form-body .heading{
+    color:#9013FE;
+    font-size:40px;
+    text-align:left;
+    font-weight: 400;
+}
+.form .form-body .paragraph{
+    color:black;
+    font-size:12px;
+    text-align:left;
+    font-weight: 400px;
+}
+.form .form-body .get-started{
+    text-align: center;
+    display: block;
+    padding-top:25px;
+}
+.form .form-body .get-started .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .form .form-body img{
+    width:210px;
+    height:45px;
+  }
+
+@media(max-width:450px){
+    .form .form-body .heading{
+        font-size:30px;
+    }
+    .form .form-body{
+        padding:30px;
+    }
+}

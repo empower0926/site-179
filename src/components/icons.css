@@ -1,0 +1,16 @@
+.icons{
+    width:35px;
+    height:35px;
+    margin:0 10px;
+}
+.icons_text{
+    margin:60px 0px;
+}
+.icons_text p{
+    color: #888888;
+    font-size:12px;
+    margin-bottom:20px;
+}
+.icons_text a{
+    color:rgb(252, 47, 47);
+}

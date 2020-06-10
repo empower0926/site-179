@@ -1,0 +1,92 @@
+.second{
+    background-image:url('https://storage.googleapis.com/theeducure/React/courbes-01.png');
+    background-size: cover;
+    width:auto;
+    height:auto;
+}
+#graph{
+    width:100%;
+    height:auto;
+}
+.second .records{
+    margin-top:-100px;
+    margin-bottom:130px;
+}
+.second .records img{
+    height: 100%;
+    width:100%;
+}
+.second .why_f p{
+    color:#9013FE;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.second .why_f h3{
+    color:black;
+    text-align:left;
+    font-weight:400;
+    word-spacing: 0.1em;
+    margin-bottom:60px;
+}
+.second .content {
+    display: flex;
+    margin-bottom:30px;
+  }  
+.second .content img {
+    margin-right: 10px;
+    display: block;
+    width:35px;
+    height:35px
+  }
+.second .content p{
+    text-align:left;
+    color:black;
+    font-size:12px;
+    margin:0 15px;
+}
+.second .img-container img{
+    width:466px;
+    height:420px;
+}
+.second .purple_button{
+    margin:100px 0 60px 0px;
+}
+.second .purple_button img{
+    width:210px;
+    height:45px;
+}
+@media(max-width:768px){
+    .second .img-container img{
+        width:300px;
+        height:278px;
+    }
+}
+@media (max-width:450px){
+.second .img-container img{
+  width:233px;
+  height:210px;
+}
+.second .why_f{
+    padding:0 25px;
+}
+.second .content{
+    padding: 0 25px;
+}
+.second .img-container{
+    margin-top:50px;
+}
+.second .purple_button{
+    margin:50px 0px;
+}
+.second .records {
+    margin-top:-140px;
+}
+.record{
+    margin-top:100px;
+}
+}
+.row{
+    margin-left:0px;
+    margin-right: 0px;
+}

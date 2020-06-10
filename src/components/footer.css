@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap');
+.footer{
+    background-image:url('https://storage.googleapis.com/theeducure/React/footerb.png');
+    background-size: cover;
+    width:auto;
+    height:auto;
+}
+.footer_navigation_items ul{
+    list-style: none;
+    margin:10px 0 0 0;
+    padding:0;
+    display: contents;
+    margin-right:100px;
+}
+.footer_navigation_items li{
+    padding:0 10px;
+    margin:0 10px;
+    text-align:left;
+}
+.footer_navigation_items li a{
+    color:white;
+    font-size:12px;
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+}
+.footer_navigation{
+    display:flex;
+    align-items: center;
+    height:100%;
+    padding:0 20px;
+}
+.footer_logo{
+    position: absolute;
+    text-align: left;
+    display:block;
+    margin-left:40px;
+}
+.footer_logo img{
+    height:34px;
+    width:92px;
+}
+.footer .copyrights{
+    margin-top:100px;
+}
+.footer .copyrights p{
+    text-align:left;
+    padding-left:50px;
+    color:white;
+}
+.footer .iconsRow{
+    display: flex;
+    margin-top:120px;
+    margin-left:80px;
+}
+
+.footer .iconsRow img{
+    width:35px;
+    height:35px;
+    cursor: pointer;
+}
+
+@media(max-width:450px){
+    .footer .copyrights{
+        margin-top:80px;
+    }
+    .footer .copyrights p{
+        margin-bottom:10px;
+        margin-top:0px;
+        font-size:12px;
+        text-align:center;
+        padding-left:0;
+    }
+    .footer_logo{
+        margin-left: 0;
+    }
+    .footer_navigation_items {
+        margin:30px 0px;
+    }
+    .footer .iconsRow{
+        margin-left:0px;
+        margin-top:50px;
+        padding:0 15px;
+    }
+}
