@@ -6,7 +6,7 @@ import  { useEffect, useState } from "react";
 function Header() {
 
     const calculateTimeLeft = () => {
-        const difference = +new Date("2020-06-12") - +new Date();
+        const difference = +new Date("2020-09-01") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
