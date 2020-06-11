@@ -4,11 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import  { useEffect, useState } from "react";
 
 function Header() {
-   
+
     const calculateTimeLeft = () => {
-        const difference = +new Date("2020-09-01") - +new Date();
+        const difference = +new Date("2020-06-12") - +new Date();
         let timeLeft = {};
-    
+
         if (difference > 0) {
           timeLeft = {
             days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -17,7 +17,7 @@ function Header() {
             seconds: Math.floor((difference / 1000) % 60)
           };
         }
-    
+
         return timeLeft;
       };
       const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
@@ -26,19 +26,46 @@ function Header() {
           setTimeLeft(calculateTimeLeft());
         }, 1000);
       });
-    
+
       const timerComponents = [];
-    
+
       Object.keys(timeLeft).forEach(interval => {
         if (!timeLeft[interval]) {
+          if (interval == "days") {
+            timerComponents.push(
+                <h3>
+                     {"00:"}
+                </h3>
+            )
+          }
+          if (interval == "hours") {
+            timerComponents.push(
+                <h3>
+                     {"00:"}
+                </h3>
+            )
+          }
+          if (interval == "minutes") {
+            timerComponents.push(
+                <h3>
+                     {"00:"}
+                </h3>
+            )
+          }
+          if (interval == "seconds") {
+            timerComponents.push(
+                <h3>
+                     {"00"}
+                </h3>
+            )
+          }
           return;
         }
         if(interval === "seconds"){
-            
-            if(interval < 10){
+            if(timeLeft[interval] < 10){
                 timerComponents.push(
                     <h3>
-                         {"0 "}{timeLeft[interval]}
+                         {"0"}{timeLeft[interval]}
                     </h3>
                 )
             }
@@ -50,18 +77,58 @@ function Header() {
                 )
             }
         }
-        else{
+        else if (interval === "minutes") {
+          if (timeLeft[interval] < 10) {
             timerComponents.push(
                 <h3>
-                    {timeLeft[interval]} {" : "}
+                     {"0"}{timeLeft[interval]}  {" : "}
                 </h3>
             )
+          }
+          else{
+            timerComponents.push(
+                <h3>
+                    {timeLeft[interval]}  {" : "}
+                </h3>
+            )
+          }
         }
-        
+        else if (interval === "hours") {
+          if (timeLeft[interval] < 10) {
+            timerComponents.push(
+                <h3>
+                     {"0"}{timeLeft[interval]}  {" : "}
+                </h3>
+            )
+          }
+          else{
+            timerComponents.push(
+                <h3>
+                    {timeLeft[interval]}  {" : "}
+                </h3>
+            )
+          }
+        }
+        else if (interval === "days") {
+          if (timeLeft[interval] < 10) {
+            timerComponents.push(
+                <h3>
+                     {"0"}{timeLeft[interval]}  {" : "}
+                </h3>
+            )
+          }
+          else{
+            timerComponents.push(
+                <h3>
+                    {timeLeft[interval]}  {" : "}
+                </h3>
+            )
+          }
+        }
       }
-      );
+    );
     return(
-        
+
         <div className="first">
             <div className="container">
                 <div className="row" style={{marginLeft:'0',marginRight:'0'}}>
